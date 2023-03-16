@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
-  *this is the main entry point
-  * i am using the betty style
-  **/
+  * main - Entry point
+  *
+  * Return: Always 0 (Success)
+  */
 int main(void)
 {
 	puts("Programming is like building a multilingual puzzle\n");
