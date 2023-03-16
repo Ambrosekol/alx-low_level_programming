@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
-  * main - Code starts here
-  *
-  * Return (0) success
-  */
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int a = sizeof(char);
@@ -18,5 +18,6 @@ int main(void)
 	printf("size of a long int: %d byte(s)\n", c);
 	printf("size of a long long int: %d byte(s)\n", d);
 	printf("size of a float: %d byte(s)\n", e);
+	
 	return (0);
 }
