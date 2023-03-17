@@ -16,6 +16,7 @@ int main(void)
 		if (ca != 9)
 		{
 			putchar(',');
+			putchat(' ');
 		}
 	}
 
