@@ -3,14 +3,10 @@
 #include <stdio.h>
 
 /**
-   * Head - starting point of the program
-   *
-   * description: 'This program checks the variable n'
-   * 'If n either 0, > 0, or < 0, it is printed out'
-   *
-   * Return: Always 0 (Success)
- */
-
+  * main - Entry point
+  *
+  * Return: Always 0 (Success)
+  */
 int main(void)
 {
 	int n;
