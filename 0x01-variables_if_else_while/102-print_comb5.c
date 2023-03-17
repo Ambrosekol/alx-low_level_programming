@@ -16,8 +16,7 @@ int main(void)
 			int a = i / 10;
 			int b = i % 10;
 			int c = j / 10;
-			int d = j % 10;
-			
+			int d = j % 10;			
 			putchar(a + '0');
 			putchar(b + '0');
 			putchar(' ');
