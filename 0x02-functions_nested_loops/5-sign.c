@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-  * _isalpha - checks if int c is higher
+  * print_sihn - prints sign accordingly
   *
-  * @c: number to be checked
+  * @n: number to be checked
   *
-  * Return: Success (0) or (1)
+  * Return: Success (0), (1) or (-1)
   */
 int print_sign(int n)
 {
