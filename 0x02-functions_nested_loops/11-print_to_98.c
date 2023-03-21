@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
-  * add - adds two number
-  * @a: input a
-  * @b: input b
+  * print_to_98 - adds two number
+  * @n: input a
   * Return: result of adding
   */
 void print_to_98(int n)
