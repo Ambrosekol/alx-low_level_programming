@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - check the code
@@ -7,7 +8,11 @@
  */
 int main(void)
 {
-    print_diagonal(2);
-    print_diagonal(10);
+    char c;
+
+    c = '0';
+    printf("%c: %d\n", c, _isdigit(c));
+    c = 'a';
+    printf("%c: %d\n", c, _isdigit(c));
     return (0);
 }
