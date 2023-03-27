@@ -6,7 +6,9 @@
   */
 void rev_string(char *s)
 {
-	int a, c;
+	long int a;
+	int c;
+
 	char revstr[9000];
 	int b = 0;
 
