@@ -19,6 +19,6 @@ void rev_string(char *s)
 	}
 	for (c = 0; c <= (int)(strlen(revstr)); c++)
 	{
-		*s[c] = revstr[c];
+		s[c] = revstr[c];
 	}
 }
