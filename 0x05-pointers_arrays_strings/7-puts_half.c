@@ -9,8 +9,8 @@ void puts_half(char *str)
 	int a;
 
 	int z = (strlen(str) - 1) / 2;
-	for (a = 0; a <= ((int) strlen(str)); a++)
+	for (a = z; a <= ((int)strlen(str)); a++)
 	{
-		printf("%c", str[0 + z]);
+		printf("%c", str[a]);
 	}
 }
