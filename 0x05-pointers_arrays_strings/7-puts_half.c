@@ -11,6 +11,6 @@ void puts_half(char *str)
 	int z = (strlen(str) - 1) / 2;
 	for (a = 0; a <= ((int) strlen(str)); a++)
 	{
-		printf("%s", str[0 + z]);
+		printf("%c", str[0 + z]);
 	}
 }
