@@ -8,7 +8,7 @@ void puts_half(char *str)
 {
 	int a;
 	int length = strlen(str);
-	int start_index = (length - 1) / 2;
+	int start_index = length / 2;
 
 	if (length % 2 != 0)
 	{
@@ -16,7 +16,7 @@ void puts_half(char *str)
 	}
 	for (a = start_index; a < length; a++)
 	{
-		printf("%c", str[a + 1]);
+		printf("%c", str[a]);
 	}
 	printf("\n");
 }
