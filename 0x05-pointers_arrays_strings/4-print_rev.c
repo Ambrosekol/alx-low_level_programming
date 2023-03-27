@@ -7,7 +7,7 @@
 void print_rev(char *s)
 {
 	int a;
-	char revstr[strlen(s)-1];
+	char revstr[];
 	int b = 0;
 
 	for (a = (strlen(s) - 1); a >= 0; a--)
