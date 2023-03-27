@@ -7,7 +7,7 @@
 void print_rev(char *s)
 {
 	int a;
-	char revstr[];
+	char revstr = {};
 	int b = 0;
 
 	for (a = (strlen(s) - 1); a >= 0; a--)
@@ -15,4 +15,5 @@ void print_rev(char *s)
 		revstr[b] = s[a];
 		b++;
 	}
+	puts(revstr);
 }
