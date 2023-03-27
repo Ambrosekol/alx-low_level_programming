@@ -8,7 +8,7 @@ void puts_half(char *str)
 {
 	int a;
 
-	int z = (strlen(str) - 1) / 2;
+	int z = (strlen(str) - 2) / 2;
 
 	for (a = z; a <= ((int)strlen(str)); a++)
 	{
