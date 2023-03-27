@@ -11,6 +11,13 @@ void print_array(int *a, int n)
 
 	for (z = 0; z < n; z++)
 	{
-		printf("%d, ", a[z]);
+		if (a[z] != a[n])
+		{
+			printf("%d, ", a[z]);
+		}
+		else
+		{
+			print("%d '\n'", a[z]);
+		}
 	}
 }
