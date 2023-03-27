@@ -11,5 +11,5 @@ char *_strcpy(char *dest, char *src)
 
 	strcpy(midary, src);
 	dest = midary;
-	return midary;
+	return dest;
 }
