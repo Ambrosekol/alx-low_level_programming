@@ -12,5 +12,5 @@ void puts2(char *str)
 	{
 		printf("%c", str[a]);
 	}
-	puts(\n);
+	printf("\n");
 }
