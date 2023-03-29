@@ -1,1 +1,1 @@
-This is a new readme file created for ALX programming. This repo contains the directories for each task
+0x06-pointers_arrays_strings
