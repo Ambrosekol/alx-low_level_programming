@@ -15,12 +15,4 @@ void reverse_array(int *a, int n)
 		a[i] = a[n - 1 - i];
 		a[n - 1 - i] = temp;
 	}
-	for (i = 0; i < n; i++)
-	{
-		printf("%d", a[i]);
-		if (i != n-1)
-		{
-			printf(", ");
-		}
-	}
 }
