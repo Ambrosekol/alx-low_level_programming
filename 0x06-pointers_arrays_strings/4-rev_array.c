@@ -7,14 +7,13 @@
   */
 void reverse_array(int *a, int n)
 {
-	int k[n];
-	int i;
-	int c;
+	int i, c;
 
-	c = 0;
-	for(i = n; i >= 0; i--)
+	c = n;
+	for(i = n - 1; i >= 0; i--)
 	{
-		k[c] = a[i];
-		c++;
+		a[i] = a[c];
+		c--;
 	}
+	
 }
