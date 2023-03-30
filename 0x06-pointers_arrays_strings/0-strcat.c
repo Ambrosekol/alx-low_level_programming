@@ -8,8 +8,18 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char *ptr;
+	char *dest_ptr = dest;
 
-	ptr = strcat(*dest, *src);
-	return *ptr;
+	while (*dest_ptr != '\0')
+	{
+		dest_ptr++;
+	}
+	while (*src != '\0')
+	{
+		*dest_ptr = *src;
+		dest_ptr++;
+		src++;
+	}
+	*dest_ptr = '\0';
+	return (dest);
 }
