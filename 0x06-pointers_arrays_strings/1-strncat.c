@@ -1,6 +1,6 @@
 #include "main.h"
 
-char* _strncat(char* dest, const char* src, size_t n)
+char *_strncat(char* dest, const char* src, size_t n)
 {
     char* dest_ptr = dest + strlen(dest);
     size_t i;
