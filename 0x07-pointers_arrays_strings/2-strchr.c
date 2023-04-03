@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * strchr - finds a character in a strinmg
+  * _strchr - finds a character in a strinmg
   * @s: array to find character
   * @c: character to find
   * Return: a char which is a pointer
