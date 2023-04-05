@@ -8,7 +8,7 @@ int sqrt_helper(int n, int low, int high) {
     if (low > high) {
         return (-1);
     }
-    int mid = (low + high) / 2;
+    int mid = low + high / 2;
     int sq = mid * mid;
     if (sq == n) {
         return (mid);
@@ -25,7 +25,7 @@ int _sqrt_recursion(int n)
 {
 	if (n <= 0)
 	{
-		retirn (-1);
+		return (-1);
 	}
 	return (sqrt_helper(n, 0, n));
 }
