@@ -5,19 +5,19 @@
  * Return: int
  */
 int sqrt_helper(int n, int low, int high) {
-    if (low > high) { // base case
-        return -1;
+    if (low > high) {
+        return (-1);
     }
     int mid = (low + high) / 2;
     int sq = mid * mid;
-    if (sq == n) { // base case
-        return mid;
+    if (sq == n) {
+        return (mid);
     }
-    else if (sq < n) { // recursive case
-        return sqrt_helper(n, mid + 1, high);
+    else if (sq < n) {
+        return (sqrt_helper(n, mid + 1, high));
     }
-    else { // recursive case
-        return sqrt_helper(n, low, mid - 1);
+    else {
+        return (sqrt_helper(n, low, mid - 1));
     }
 }
 
