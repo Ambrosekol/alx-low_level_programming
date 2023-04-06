@@ -5,8 +5,8 @@
   * @argv - argument vector of 2d arrays
   * Return - success 0;
   */
-int main(int argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-	_putchar(*argv[0]);
+	printf("%s\n", argv[0]);
 	return (0);
 }
