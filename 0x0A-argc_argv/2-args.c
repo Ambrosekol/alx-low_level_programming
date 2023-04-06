@@ -1,7 +1,7 @@
 #include "main.h"
 /**
   * main - main point of program
-  * @argc: argument count 
+  * @argc: argument count
   * @argv: argument vector of strings
   * Return: success
   */

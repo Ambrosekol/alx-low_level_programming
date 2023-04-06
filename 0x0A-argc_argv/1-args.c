@@ -2,8 +2,8 @@
 /**
   * main - a program that prints the number of arguments.
   * @argc: number of items
-  * @argv - array of srtings
-  * return: 0;
+  * @argv: array of srtings
+  * Return: 0;
   */
 int main(int argc, char __attribute__((unused)) *argv[])
 {
