@@ -8,7 +8,7 @@
 int main(int argc, char __attribute__((unused))*argv[])
 {
 	int i;
-	long unsigned int res = 0;
+	unsigned long int res = 0;
 
 	if (argc != 1)
 	{
