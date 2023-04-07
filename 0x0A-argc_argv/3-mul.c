@@ -22,6 +22,6 @@ int main(int argc, char __attribute__((unused))*argv[])
 		printf("Error\n");
 		return (1);
 	}
-	printf("%d\n", p);
+	printf("%d\n", res);
 	return (0);
 }
