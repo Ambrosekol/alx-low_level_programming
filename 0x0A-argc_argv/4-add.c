@@ -5,7 +5,7 @@
   * @argv: list of items
   * Return: exit (0);
   */
-int main(int argc, char *argv[])
+int main(int argc, char __attribute__((unused))*argv[])
 {
 	int i;
 	long int res = 0;
