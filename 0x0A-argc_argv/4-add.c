@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int res = 0;
+	long int res = 0;
 
 	if (argc != 1)
 	{
@@ -24,11 +24,11 @@ int main(int argc, char *argv[])
 				res += atoi(argv[i]);
 			}
 		}
-		printf("%d\n", res);
+		printf("%ld\n", res);
 	}
 	else
 	{
-		printf("%d\n", res);
+		printf("%ld\n", res);
 	}
 	return (0);
 }
