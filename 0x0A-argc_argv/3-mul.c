@@ -5,10 +5,11 @@
   * @argv: array of srings
   * Return: success (0)
   */
-int main(int argc, char void *argv[])
+int main(int argc, char *argv[])
 {
 	int a;
 	int res = 1;
+	char *a = argv;
 
 	if (argc > 2)
 	{
