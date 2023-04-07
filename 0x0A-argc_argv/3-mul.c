@@ -7,21 +7,23 @@
   */
 int main(int argc, char *argv[])
 {
-	int a;
-	int res = 1;
-	char *a = argv;
+	int a, m;
+	char *res;
+	int p = 1;
 
 	if (argc > 2)
 	{
 		for (a = 1; a < argc; a++)
 		{
-			res *= atoi(argv[a]);
+			res = argv[a];
+			m = atoi(res);
+			p *= m; 
 		}
 	}
 	else
 	{
 		return (-1);
 	}
-	printf("%d\n", res);
+	printf("%d\n", p);
 	return (0);
 }
