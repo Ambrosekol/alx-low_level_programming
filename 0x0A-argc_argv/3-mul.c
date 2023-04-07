@@ -14,7 +14,7 @@ int main(int argc, char __attribute__((unused))*argv[])
 	{
 		for (a = 1; a < argc; a++)
 		{
-			res *= atoi(argv[a]); 
+			res *= atoi(argv[a]);
 		}
 	}
 	else
