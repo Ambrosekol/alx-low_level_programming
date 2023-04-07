@@ -8,13 +8,13 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	unsigned long int res = 0;
+	int res = 0;
 
 	if (argc != 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) == 0)
+			if (isdigit(*argv[i]) == 0)
 			{
 				printf("Error\n");
 				return (1);
@@ -24,11 +24,11 @@ int main(int argc, char *argv[])
 				res += atoi(argv[i]);
 			}
 		}
-		printf("%ld\n", res);
+		printf("%d\n", res);
 	}
 	else
 	{
-		printf("%ld\n", res);
+		printf("%d\n", res);
 	}
 	return (0);
 }
