@@ -5,19 +5,16 @@
   * @argv: array of srings
   * Return: success (0)
   */
-int main(int argc, char *argv[])
+int main(int argc, char __attribute__((unused))*argv[])
 {
-	int a, m;
-	char *res;
-	int p = 1;
+	int a;
+	char res = 1;
 
 	if (argc > 2)
 	{
 		for (a = 1; a < argc; a++)
 		{
-			res = argv[a];
-			m = atoi(res);
-			p *= m; 
+			res *= atoi(argv[a]); 
 		}
 	}
 	else
