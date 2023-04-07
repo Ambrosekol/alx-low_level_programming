@@ -5,7 +5,7 @@
   * @argv: array of srings
   * Return: success (0)
   */
-int main(int argc, char __attribute__((unused)) *argv[])
+int main(int argc, char void *argv[])
 {
 	int a;
 	int res = 1;
