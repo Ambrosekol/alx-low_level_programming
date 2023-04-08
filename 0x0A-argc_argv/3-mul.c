@@ -10,7 +10,7 @@ int main(int argc, char __attribute__((unused))*argv[])
 	int a;
 	int res = 1;
 
-	if (argc >= 2)
+	if (argc > 2)
 	{
 		for (a = 1; a < argc; a++)
 		{
