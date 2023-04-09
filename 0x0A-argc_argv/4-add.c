@@ -11,28 +11,21 @@ int main(int argc, char *argv[])
 	int i, s, j;
 	int res = 0;
 
-	if (argc != 1)
+	for (s = 1; s < argc; s++)
 	{
-		for (s = 1; s < argc; s++)
+		for (j = 0; j < (int) strlen(argv[s]); j++)
 		{
-			for (j = 0; j < (int) strlen(argv[s]); j++)
+			if (argv[s][j] >= 'a' && argv[s][j] <= 'z')
 			{
-				if (argv[s][j] >= 'a' && argv[s][j] <= 'z')
-				{
-					printf("Error\n");
-					return (1);
-				}
+				printf("Error\n");
+				return (1);
 			}
 		}
-		for (i = 1; i < argc; i++)
-		{
-			res += atoi(argv[i]);
-		}
-		printf("%d\n", res);
 	}
-	else
+	for (i = 1; i < argc; i++)
 	{
-		printf("%d\n", res);
-	}
+		res += atoi(argv[i]);
+	}	
+	printf("%d\n", res);
 	return (0);
 }
