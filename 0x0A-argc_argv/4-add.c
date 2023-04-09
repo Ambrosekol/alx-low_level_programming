@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include "main.h"
 /**
   * main - starting point
   * @argc: input count
