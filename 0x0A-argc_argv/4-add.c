@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (argc == NULL)
 	{
-		printf("0\n");
+		printf("0");
 	}
 
 	for (s = 1; s < argc; s++)
