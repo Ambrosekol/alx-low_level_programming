@@ -13,9 +13,7 @@ int main(int argc, char *argv[])
 	int res = 0;
 
 	if (argc == NULL)
-	{
 		printf("0");
-	}
 
 	for (s = 1; s < argc; s++)
 	{
