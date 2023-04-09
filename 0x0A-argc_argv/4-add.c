@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int i, s, j;
 	int res = 0;
 
-	if (argc == NULL)
+	if (argv == NULL)
 		printf("0");
 
 	for (s = 1; s < argc; s++)
