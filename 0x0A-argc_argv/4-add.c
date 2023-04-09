@@ -13,8 +13,9 @@ int main(int argc, char *argv[])
 	int res = 0;
 
 	if (argv == NULL)
-		printf("0");
-
+	{
+		printf("0\n");
+	}
 	for (s = 1; s < argc; s++)
 	{
 		for (j = 0; j < (int) strlen(argv[s]); j++)
