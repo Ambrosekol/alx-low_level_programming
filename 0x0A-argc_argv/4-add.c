@@ -28,7 +28,15 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		res += atoi(argv[i]);
+		if (isdigit(argv[i]) != 0)
+		{
+			res += atoi(argv[i]);
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}	
 	printf("%d\n", res);
 	return (0);
