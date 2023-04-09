@@ -12,9 +12,9 @@ int main(int argc, char *argv[])
 	int i, s, j;
 	int res = 0;
 
-	if (argc <= 1 || argc == NULL)
+	if (argc == NULL)
 	{
-		printf("0");
+		printf("0\n");
 	}
 
 	for (s = 1; s < argc; s++)
