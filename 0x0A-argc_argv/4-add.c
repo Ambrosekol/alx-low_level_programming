@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	int res = 0;
 
 	if (argv == NULL)
-		printf("0\n");
+		printf("0");
 
 	for (s = 1; s < argc; s++)
 	{
@@ -28,15 +28,7 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (isdigit(argv[i]) != 0)
-		{
-			res += atoi(argv[i]);
-		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		res += atoi(argv[i]);
 	}	
 	printf("%d\n", res);
 	return (0);
