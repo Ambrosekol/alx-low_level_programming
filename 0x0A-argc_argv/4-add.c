@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 /**
   * main - starting point
   * @argc: input count
@@ -10,6 +9,9 @@ int main(int argc, char *argv[])
 {
 	int i, s, j;
 	int res = 0;
+
+	if (argv == NULL)
+		printf("0\n");
 
 	for (s = 1; s < argc; s++)
 	{
