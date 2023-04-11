@@ -15,13 +15,23 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 	nlsize = ac;
-	holder = *av;
 	memcount = 0;
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; j < strlen(holder[i]); j++)
+		memcount += strlen(av[i]) + 1;
+	}
+	memalloc = malloc(sizeof(char) * memcount);
+	if (memalloc == NULL)
+	{
+		return (NULL);
+	}
+	memcount = 0;
+	for (i = 0; i < ac; i++)
+	{
+		holder = av[i];
+		for (j = 0; j < strlen(holder); j++)
 		{
-			memalloc[memcount] = holder[i][j];
+			memalloc[memcount] = holder[j];
 			memcount++;
 		}
 		memalloc[memcount] = '\n';
@@ -30,4 +40,3 @@ char *argstostr(int ac, char **av)
 	memalloc[memcount] = '\0';
 	return (memalloc);
 }
-		
