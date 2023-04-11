@@ -14,7 +14,7 @@ int **alloc_grid(int width, int height) /* 6 and 4 */
 		return (NULL);
 	if (height == 0 || height < 0)
 		return (NULL);
-	pnum = (int *)malloc((sizeof(int) * width) + (sizeof(int) * height));
+	pnum = malloc((sizeof(int) * width) + (sizeof(int) * height));
 	if (pnum == NULL)
 		return (NULL);
 	for (a = 0; a < (sizeof(pnum) / sizeof(int)); a++)
