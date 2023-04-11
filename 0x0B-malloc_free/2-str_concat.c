@@ -18,10 +18,10 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		newptr2 = "";
 
-	temp1 = strlen(newptr1);
-	temp2 = strlen(newptr2);
-	varhold = temp1 + temp2;
-	k = malloc((sizeof(char) * temp1) + (sizeof(char) * temp2) + 1);
+	temp1 = strlen(newptr1); // 0
+	temp2 = strlen(newptr2); // 5
+	varhold = temp1 + temp2; // 5
+	k = malloc((sizeof(char) * temp1) + (sizeof(char) * temp2));
 	if (k == NULL)
 	{
 		return (NULL);
