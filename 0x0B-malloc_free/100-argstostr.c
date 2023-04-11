@@ -7,7 +7,7 @@
   */
 char *argstostr(int ac, char **av)
 {
-	int i, j, nlsize, memcount;
+	int i, j, memcount;
 	char *memalloc, *holder;
 
 	if (ac == 0 || av == NULL)
@@ -29,7 +29,7 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		holder = av[i];
-		for (j = 0; j < strlen(holder); j++)
+		for (j = 0; j < (int) strlen(holder); j++)
 		{
 			memalloc[memcount] = holder[j];
 			memcount++;
