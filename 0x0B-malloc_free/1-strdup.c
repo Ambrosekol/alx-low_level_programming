@@ -5,24 +5,24 @@
   * Return: char
   */
 
-char __attribute__*_strdup(char* str)
+char *_strdup(char *str)
 {
 	char *p;
 	int i, len;
 
-	len = strlen(str);
-	p = malloc(sizeof(char) * (len + 1));
-	if (p == NULL || len == 0)
+	len = strlen(str) + 1;
+	if (strlen(str) == 0)
 	{
 		return (NULL);
 	}
 	else
 	{
-		for (i = 0; i < len; i++)
+		p = malloc(sizeof(char) * len);
+		for (i = 0; i < (len - 1); i++)
 		{
 			p[i] = str[i];
 		}
-		p[len] = '\0';
+		p[len - 1] = '\0';
 		return (p);
 	}
 }
