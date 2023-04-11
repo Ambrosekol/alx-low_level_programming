@@ -22,7 +22,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0; j < (int) sizeof(holder[i]); j++)
 		{
-			memalloc[memcount] = holder[i]; /**[j];*/
+			memalloc[memcount] = holder[i]*[j];
 			memcount++;
 		}
 		memalloc[memcount] = '\0';
