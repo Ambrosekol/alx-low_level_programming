@@ -4,7 +4,7 @@
   * @str: string
   * Return: char
   */
-char *_strdup(char __attribute__((unused)) *str)
+char *_strdup(char* __attribute__((unused)) str)
 {
 	char *p;
 	int i;
