@@ -19,7 +19,7 @@ char *argstostr(int ac, char **av)
 	{
 		memcount += strlen(av[i]) + 1;
 	}
-	memalloc = malloc(sizeof(char) * memcount);
+	memalloc = malloc(sizeof(char) * memcount + 1);
 	if (memalloc == NULL)
 	{
 		return (NULL);
