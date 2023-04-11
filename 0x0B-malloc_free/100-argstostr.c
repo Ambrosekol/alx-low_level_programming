@@ -17,19 +17,17 @@ char *argstostr(int ac, char **av)
 	nlsize = ac;
 	holder = *av;
 	memcount = 0;
-	memalloc = malloc(sizeof(holder) + (sizeof(char) * (ac + nlsize)));
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; j < (int) sizeof(holder[i]); j++)
+		for (j = 0; j < strlen(holder[i]); j++)
 		{
-			memalloc[memcount] = holder[i]*[j];
+			memalloc[memcount] = holder[i][j];
 			memcount++;
 		}
-		memalloc[memcount] = '\0';
-		memcount++;
 		memalloc[memcount] = '\n';
 		memcount++;
 	}
+	memalloc[memcount] = '\0';
 	return (memalloc);
 }
 		
