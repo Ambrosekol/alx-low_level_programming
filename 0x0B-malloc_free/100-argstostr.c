@@ -8,7 +8,7 @@
 char *argstostr(int ac, char **av)
 {
 	int i, j, nlsize, memcount;
-	char *memalloc, *holder[];
+	char *memalloc, *holder;
 
 	if (ac == 0 || av == NULL)
 	{
