@@ -12,6 +12,7 @@ char *str_concat(char *s1, char *s2)
 
 	newptr1 = s1;
 	newptr2 = s2;
+	i = 0;
 	if (s1 == NULL)
 		newptr1 = "";
 	
@@ -21,19 +22,20 @@ char *str_concat(char *s1, char *s2)
 	temp1 = strlen(newptr1); /* 0*/
 	temp2 = strlen(newptr2); /* 5*/
 	varhold = temp1 + temp2; /* 5 */
-	k = malloc((sizeof(char) * temp1) + (sizeof(char) * temp2));
+	k = malloc((sizeof(char) * temp1) + (sizeof(char) * temp2) + 1);
 	if (k == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < temp1; i++)
+	while (i < temp1)
 	{
 		k[i] = newptr1[i];
 		varhold--;
+		i++;
 	}
-	for (j = varhold; j > 0; j--)
+	for (j = 0; j < varhold; j++)
 	{
-		k[j] = newptr2[varhold - j];
+		k[j + temp1] = newptr2[j];
 	}
 	return (k);
 }
