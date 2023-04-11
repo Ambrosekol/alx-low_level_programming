@@ -1,21 +1,11 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
-/**
-  * main - starting point
-  * @argc: input count
-  * @argv: list of items
-  * Return: exit (0);
-  */
+
 int main(int argc, char *argv[])
 {
-	int i, s, j;
-	int res = 0;
+	int i, s, j, sum = 0;
 
 	if (argv == NULL)
-	{
 		printf("0\n");
-	}
 	for (s = 1; s < argc; s++)
 	{
 		for (j = 0; j < (int) strlen(argv[s]); j++)
@@ -29,8 +19,8 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		res += atoi(argv[i]);
+		sum += atoi(argv[i]);
 	}
-	printf("%d\n", res);
+	printf("%d\n", sum);
 	return (0);
 }
