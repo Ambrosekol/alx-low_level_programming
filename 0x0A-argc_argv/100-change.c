@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		if (realv <= 0)
 		{
 			printf("%d\n", total);
-			return (0);
+			return (1);
 		}
 		else
 		{
