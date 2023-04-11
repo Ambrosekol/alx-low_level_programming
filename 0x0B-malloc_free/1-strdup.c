@@ -4,18 +4,23 @@
   * @str: string
   * Return: char
   */
-char *_strdup(char* __attribute__((unused)) str)
+char *_strdup(char* str)
 {
 	char *p;
-	int i;
+	int i, len;
 
-	p = malloc(sizeof(char) * strlen(str));
-	if (p == NULL)
-		return (NULL);
-
-	for (i = 0; i < strlen(str); i++)
+	len = strlen(str);
+	p = malloc(sizeof(char) * len);
+	if (p == NULL || len == 0)
 	{
-		p[i] = str[i];
+		return (NULL);
 	}
-	return (p);
+	else
+	{
+		for (i = 0; i < len; i++)
+		{
+			p[i] = str[i];
+		}
+		return (p);
+	}
 }
