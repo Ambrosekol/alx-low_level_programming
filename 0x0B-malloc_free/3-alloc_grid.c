@@ -7,17 +7,18 @@
   */
 int **alloc_grid(int width, int height) /* 6 and 4 */
 {
-	int a;
+	int a, mtaloc;
 	int *pnum;
 
 	if (width == 0 || width < 0)
 		return (NULL);
 	if (height == 0 || height < 0)
 		return (NULL);
-	pnum = malloc((sizeof(int) * width) + (sizeof(int) * height));
+	mtaloc = (sizeof(int) * width) + (sizeof(int) * height);
+	pnum = malloc(mtaloc);
 	if (pnum == NULL)
 		return (NULL);
-	for (a = 0; a < (sizeof(*pnum) / sizeof(int)); a++)
+	for (a = 0; a < (mtaloc / sizeof(int)); a++)
 	{
 		*pnum[a] = 0;
 	}
