@@ -8,7 +8,7 @@
 int **alloc_grid(int width, int height) /* 6 and 4 */
 {
 	int a, mtaloc;
-	int *pnum;
+	int *pnum, **value;
 
 	if (width == 0 || width < 0)
 		return (NULL);
@@ -22,5 +22,6 @@ int **alloc_grid(int width, int height) /* 6 and 4 */
 	{
 		pnum[a] = 0;
 	}
-	return (pnum);
+	value = pnum;
+	return (value);
 }
