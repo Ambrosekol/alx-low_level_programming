@@ -5,7 +5,7 @@
   * Return: char
   */
 
-char *_strdup(char* str)
+char *_strdup(char* str)__attribute__
 {
 	char *p;
 	int i, len;
