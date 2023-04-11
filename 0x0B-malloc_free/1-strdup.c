@@ -4,6 +4,7 @@
   * @str: string
   * Return: char
   */
+
 char *_strdup(char* str)
 {
 	char *p;
