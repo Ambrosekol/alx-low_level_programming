@@ -15,7 +15,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 	nlsize = ac;
-	holder = **av;
+	holder = *av;
 	memcount = 0;
 	memalloc = malloc(sizeof(holder) + (sizeof(char) * (ac + nlsize)));
 	for (i = 0; i < ac; i++)
