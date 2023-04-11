@@ -22,6 +22,7 @@ int **alloc_grid(int width, int height) /* 6 and 4 */
 	{
 		pnum[a] = 0;
 	}
+	free(pnum);
 	value = &pnum;
 	return (value);
 }
