@@ -14,7 +14,6 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
-	nlsize = ac;
 	memcount = 0;
 	for (i = 0; i < ac; i++)
 	{
