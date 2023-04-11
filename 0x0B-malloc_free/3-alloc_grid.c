@@ -14,12 +14,12 @@ int **alloc_grid(int width, int height) /* 6 and 4 */
 		return (NULL);
 	if (height == 0 || height < 0)
 		return (NULL);
-	pmem = (int *)malloc((sizeof(int) * width) + (sizeof(int) * height));
-	if (pnem == NULL)
+	pnum = (int *)malloc((sizeof(int) * width) + (sizeof(int) * height));
+	if (pnum == NULL)
 		return (NULL);
 	for (a = 0; a < (sizeof(pnum) / sizeof(int)); a++)
 	{
 		*pnum[a] = 0;
 	}
-	return (pmem);
+	return (pnum);
 }
