@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * malloc_checked - function that allocates memory 
+ * malloc_checked - function that allocates memory
  * @b: int b
  * Return: Void.
  */
@@ -13,5 +13,4 @@ void *malloc_checked(unsigned int b)
 	{
 		exit(98);
 	}
-	return (p);
 }
