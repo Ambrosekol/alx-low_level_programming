@@ -8,7 +8,7 @@
 
 int *array_range(int min, int max)
 {
-	int *p, diff, cnt;
+	int i, *p, diff, cnt;
 
 	cnt = 0;
 	if (min > max)
