@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define __FILE__
 /**
  * main - start of program
  * Return: success
