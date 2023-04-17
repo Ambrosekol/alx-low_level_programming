@@ -1,4 +1,7 @@
+#ifndef NEW_H
+#define NEW_H
 #include <stdio.h>
+#endif
 /**
  * main - start of program
  * 
