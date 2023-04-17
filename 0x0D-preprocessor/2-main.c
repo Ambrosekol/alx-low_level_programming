@@ -1,11 +1,9 @@
-#ifndef NEW_H
-#define NEW_H
 #include <stdio.h>
-#endif
+
 /**
  * main - start of program
  * 
- * Return: success
+ * Return: success(0)
  */
 int main (void)
 {
