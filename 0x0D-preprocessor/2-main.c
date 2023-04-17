@@ -3,7 +3,7 @@
  * main - start of program
  * Return: success
  */
-int main (void)
+int main ()
 {
 	printf("%s\n", __FILE__);
 	return (0);
