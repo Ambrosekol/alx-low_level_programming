@@ -3,10 +3,10 @@
 /**
  * print_name - prints name
  * @name: pointer to name
- * @*f: pointer to function
+ * @f: pointer to function
  * Return: viid
  */
-void print_name(char *name, void (*f)(char *))
+void print_name(char *name, void (*f)(char *a))
 {
 	f(name);
 }
