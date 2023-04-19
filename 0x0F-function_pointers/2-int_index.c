@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 /**
  * int_index - index of a numner in array
  * @array: array to use
