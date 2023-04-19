@@ -3,13 +3,14 @@
  * int_index - index of a numner in array
  * @array: array to use
  * @size: size if array
- * @(cmp)(int): pointer of function
+ * @cmp: pointer of function
+ * Return: return 0 number of good else -1
  */
-int int_index(int *array, int size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int a))
 {
 	int i;
 
-	if(array == NULL || size == NULL || cmp == NULL)
+	if (array == NULL || size == NULL || cmp == NULL)
 		return (-1);
 	if (size <= 0)
 		return (-1);
