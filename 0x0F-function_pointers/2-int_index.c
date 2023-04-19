@@ -1,3 +1,4 @@
+#include "function_pointers.h"
 /**
  * int_index - index of a numner in array
  * @array: array to use
