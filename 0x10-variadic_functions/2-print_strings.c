@@ -31,7 +31,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 				printf("%c", separator[b]);
 			}
 		}
-		va_end(args);
 	}
+	va_end(args);
 	printf("\n");
 }
