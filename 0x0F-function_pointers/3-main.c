@@ -31,5 +31,5 @@ int main(int __attribute__((unused))argc, char *argv[])
 		exit(100);
 	}
 	printf("%d\n", get_op_func(optor)(num1, num2));
-	return(0);	
+	return (0);
 }
