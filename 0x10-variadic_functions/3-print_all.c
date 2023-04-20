@@ -16,22 +16,22 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	while (*ptr)
 	{
-		if (*format == 'c')
+		if (*ptr == 'c')
 		{
 			c = va_arg(args, int);
 			printf("%c", c);
 		}
-		else if (*format == 'i')
+		else if (*ptr == 'i')
 		{
 			i = va_arg(args, int);
 			printf("%d", i);
 		}
-		else if (*format == 'f')
+		else if (*ptr == 'f')
 		{
 			f = va_arg(args, double);
 			printf("%f", f);
 		}
-		else if (*format == 's')
+		else if (*ptr == 's')
 		{
 			s = va_arg(args, char *);
 			if (s)
