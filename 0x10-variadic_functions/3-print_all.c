@@ -4,16 +4,17 @@
   * @format: format to be used
   * Return: void
   */
-void print_all(const char *n const format, ...)
+void print_all(const char * const format, ...)
 {
 	va_list args;
 	char c;
 	int i;
 	float f;
 	char *s;
+	const char *ptr = format;
 
 	va_start(args, format);
-	while (*format)
+	while (*ptr)
 	{
 		if (*format == 'c')
 		{
@@ -38,7 +39,7 @@ void print_all(const char *n const format, ...)
 			else
 				printf("(nil)");
 		}
-		++format;
+		++ptr;
 	}
 	va_end(args);
 	printf("\n");
