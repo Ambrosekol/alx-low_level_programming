@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "3-calc/h"
+#include "3-calc.h"
 /**
  * get_op_func - selects the correct function to perform
  * @s: operator argument
@@ -16,7 +16,7 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 	int i = 0;
-	while (ops[i].op != NULL && (*ops[i].op != s))
+	while (ops[i].op != NULL && (ops[i].op != s))
 	{
 		i++;
 	}
