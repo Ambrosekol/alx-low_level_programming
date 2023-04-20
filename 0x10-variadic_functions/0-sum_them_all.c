@@ -9,7 +9,7 @@ int sum_them_all(const unsigned int n, ...)
 {
 	int i;
 
-	if (n ==0)
+	if (n == 0)
 		return (0);
 	int sum = 0;
 	var_list = ptr;
