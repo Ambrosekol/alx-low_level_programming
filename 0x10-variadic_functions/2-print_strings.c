@@ -25,10 +25,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", p);
 		}
 		if (separator != NULL && a < (int) (n - 1))
+		{
 			for (b = 0; b < (int) strlen(separator); b++)
 			{
 				printf("%c", separator[b]);
 			}
+		}
+		va_end(args);
 	}
 	printf("\n");
 }
