@@ -18,7 +18,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		printf("%d", temp);
 		if (separator != NULL)
 		{
-			for (k = 0; k < sizeof(separator); k++)
+			for (k = 0; k < (int) sizeof(separator); k++)
 			{
 				printf("%c", separator[k]);
 			}
