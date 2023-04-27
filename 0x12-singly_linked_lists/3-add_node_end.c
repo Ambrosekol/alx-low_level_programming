@@ -7,7 +7,8 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new_node, *crrnt;
+	list_t *new_node;
+	list_t *crrnt;
 	char *strng;
 
 	new_node = malloc(sizeof(list_t));
@@ -37,5 +38,5 @@ list_t *add_node_end(list_t **head, const char *str)
 		}
 		crrnt->next = new_node;
 	}
-	reyurn (new_node);
+	return (new_node);
 }
