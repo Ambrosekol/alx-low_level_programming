@@ -1,5 +1,3 @@
-#ifndef FUNH
-#define FUNH
 #include "lists.h"
 /**
  * print_list - prints tge elements of a linked list
@@ -26,4 +24,3 @@ size_t print_list(const list_t *h)
 	}
 	return (num);
 }
-#endif
