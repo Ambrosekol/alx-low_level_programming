@@ -12,14 +12,12 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	chksum = 0;
 	temp = head;
-	if (temp == NULL)
-	{
-		return (NULL);
-	}
-	while (chksum < index)
+	while (temp != NULL && chksum < index)
 	{
 		chksum++;
 		temp = temp->next;
 	}
+	if (temp == NULL)
+		return (NULL);
 	return (temp);
 }
