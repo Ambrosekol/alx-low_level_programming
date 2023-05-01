@@ -12,10 +12,10 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	chksum = 0;
 	temp = head;
-	while (chksum != index)
+	while (chksum < index)
 	{
 		chksum++;
-		temp = head->next;
+		temp = temp->next;
 	}
 	return (temp);
 }
