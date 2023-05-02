@@ -26,7 +26,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	current = *head;
 	for (cnt = 0; cnt < (idx - 1); cnt++)
 	{
-		if (*current == NULL)
+		if (current == NULL)
 		{
 			free(node);
 			return (NULL);
