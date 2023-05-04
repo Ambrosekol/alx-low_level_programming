@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_binary - prints binary to screen 
+ * print_binary - prints binary to screen
  * @n: int value
  * Return: void
  */
