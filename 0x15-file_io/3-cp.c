@@ -18,8 +18,13 @@ int main(int argc, char **filenames)
 		exit(97);
 	}
 	cp_fd = open(filenames[1], O_RDONLY);
+	if (cp_fd < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filenames[1]);
+		exit(98);
+	}
 	cp_status = read(cp_fd, buffer, 1024);
-	if (cp_status < 0 || cp_fd < 0)
+	if (cp_status < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filenames[1]);
 		exit(98);
