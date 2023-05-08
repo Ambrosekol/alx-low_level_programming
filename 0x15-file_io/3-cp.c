@@ -26,7 +26,7 @@ int main(int argc, char **filenames)
 	}
 	des_fd = open(filenames[2], O_WRONLY | O_TRUNC | O_CREAT,
 			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
-	des_status = write(des_fd, buffer, strlen(buffer));
+	des_status = write(des_fd, buffer, (strlen(buffer) + 1));
 	if (des_fd < 0 || des_status < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filenames[2]);
