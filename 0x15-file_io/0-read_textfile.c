@@ -7,5 +7,18 @@
   */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	return (write(STDOUT_FILENO, filename, letters));
+	ssize_t descriptor, amtread, amtwrote;
+	char *buffer;
+
+	if (filename == NULL)
+		return (0);
+	descriptor = open(filename, O_RDONLY);
+	if (descriptor < 0)
+		return (0);
+	buffer = malloc(sizeof(char) * (letters + 1));
+	amtread = read(descriptor, buffer, letters);
+	amtwrote = write(STDOUT_FILENO, buffer, amtread);
+	if (amtwrote < 0)
+		return (0);
+	return (amtwrote);
 }
