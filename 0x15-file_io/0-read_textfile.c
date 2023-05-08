@@ -20,5 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	amtwrote = write(STDOUT_FILENO, buffer, amtread);
 	if (amtwrote < 0)
 		return (0);
+	close(descriptor);
+	free(buffer);
 	return (amtwrote);
 }
