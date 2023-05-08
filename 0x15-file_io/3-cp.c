@@ -7,7 +7,7 @@
   */
 int main(int argc, char **filenames)
 {
-	ssize_t cp_fd, des_fd;
+	int cp_fd, des_fd;
 	ssize_t cp_status, des_status;
 	int cp_cstatus, des_cstatus;
 	char buffer[1024];
