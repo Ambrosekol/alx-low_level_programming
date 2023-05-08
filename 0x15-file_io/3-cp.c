@@ -12,11 +12,9 @@ int main(int argc, char **filenames)
 	int cp_cstatus, des_cstatus;
 	char buffer[1024];
 
-	char *str = "Usage: cp file_from file_to\n";
-
 	if (argc != 3)
 	{
-		write(STDERR_FILENO, &str, strlen(str));
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	cp_fd = open(filenames[1], O_RDONLY);
