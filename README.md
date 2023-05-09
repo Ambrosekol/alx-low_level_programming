@@ -1,2 +1,1 @@
-alx low level programming
-MAINLY C CODE.
+# This is a repo containing codes for ALX-low level programming
