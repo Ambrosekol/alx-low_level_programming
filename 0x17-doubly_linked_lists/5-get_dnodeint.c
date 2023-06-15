@@ -8,7 +8,7 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *pointer;
-	int chk = 0;
+	unsigned int chk = 0;
 
 	pointer = head;
 	if (head == NULL)
