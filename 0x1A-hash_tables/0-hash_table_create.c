@@ -19,6 +19,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 	buckets = malloc(sizeof(hash_node_t) * size);
 	if (buckets == NULL)
 		return NULL;
-	new_table->array = buckets;
+	new_table->array = &buckets;
 	return (new_table);
 }
