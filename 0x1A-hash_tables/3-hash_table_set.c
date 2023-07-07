@@ -12,17 +12,21 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
 	hash_node_t *node, *cursor;
-	char buffer[1024];
+	char buffer1[1024];
 
 	if (key == NULL || ht == NULL)
 		return (0);
 
-	node->key = key;
-	strcpy(buffer, value);
-	node->value = buffer;
+	node = malloc(sizeof(hash_node_t));
+	if (node == NULL)
+		return (0);
+
+	node->key = (char *)key;
+	strcpy(buffer1, value);
+	node->value = buffer1;
 	node->next = NULL;
 
-	index = key_index(key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 	if (ht->array[index] == NULL)
 	{
 		ht->array[index] = node;
