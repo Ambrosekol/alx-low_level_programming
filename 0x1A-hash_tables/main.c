@@ -14,5 +14,8 @@ int main(void)
 
     ht = hash_table_create(1024);
     hash_table_set(ht, "betty", "cool");
+    hash_table_set(ht, "hetairas", "Mu name");
+    hash_table_set(ht, "mentioner", "Mu name");
+    ph(ht);
     return (EXIT_SUCCESS);
 }

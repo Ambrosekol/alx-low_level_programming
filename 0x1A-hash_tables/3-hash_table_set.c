@@ -13,7 +13,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node, *cursor;
 	char buffer1[1024];
 
-	if (key == NULL || ht == NULL)
+	if (key == NULL || ht == NULL || value == NULL)
 		return (0);
 
 	node = malloc(sizeof(hash_node_t));
