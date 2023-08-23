@@ -13,7 +13,11 @@ This is a function that returns the perimeter of the island described in grid:
 to the water around the island).
 """
 
+
 def island_perimeter(grid):
+    """
+    This is the main function that does it
+    """
     perimeter = 0
     rows = len(grid)
     cols = len(grid[0])
